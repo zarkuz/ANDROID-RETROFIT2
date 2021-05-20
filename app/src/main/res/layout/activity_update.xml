@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+    <TextView
+        style="@style/tv_form"
+        android:text="Nama"/>
+    <EditText
+        android:id="@+id/et_up_name"
+        style="@style/edit_form"
+        android:hint="Name Here!!"/>
+    <TextView
+        style="@style/tv_form"
+        android:text="Nomor"/>
+    <EditText
+        android:id="@+id/et_up_number"
+        style="@style/edit_form"
+        android:hint="Number Here!!"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_up_submit"
+            android:text="Submit"
+            style="@style/btn_form"/>
+        <Button
+            android:id="@+id/btn_up_cancel"
+            android:text="Cancel"
+            style="@style/btn_form"/>
+    </LinearLayout>
+
+</LinearLayout>

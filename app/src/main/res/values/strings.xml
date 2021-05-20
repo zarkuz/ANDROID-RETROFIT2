@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LocalApiApplication</string>
+    <string name="web_domain">http://192.168.40.107/</string>
+</resources>

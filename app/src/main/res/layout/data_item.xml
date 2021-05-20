@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btn_data_value"
+            android:layout_toLeftOf="@id/btn_data_layout"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_nomor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_data_layout">
+            <ImageButton
+                android:id="@+id/btn_data_edit"
+                style="@style/btn_data"
+                android:background="@drawable/btn_data_selector"
+                android:src="@drawable/ic_baseline_create_24"
+                android:padding="5dp"
+                />
+            <ImageButton
+                android:id="@+id/btn_data_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/btn_data"
+                android:background="@drawable/btn_data_del_selector"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

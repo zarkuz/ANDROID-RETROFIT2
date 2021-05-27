@@ -15,7 +15,6 @@ import retrofit2.Response
 
 class KontakAdapter(private val listku: ArrayList<KontakData>): RecyclerView.Adapter<KontakAdapter.KontakViewHolder>(){
     inner class KontakViewHolder(viewku: View): RecyclerView.ViewHolder(viewku) {
-        var arrayku = KontakData()
         var tvId: TextView = viewku.findViewById(R.id.tv_id)
         var tvNama: TextView = viewku.findViewById(R.id.tv_nama)
         var tvNomor: TextView = viewku.findViewById(R.id.tv_nomor)
@@ -44,7 +43,6 @@ class KontakAdapter(private val listku: ArrayList<KontakData>): RecyclerView.Ada
             holder.itemView.context.startActivity(pindah)
         }
         holder.btnDelte.setOnClickListener {
-            holder.arrayku.id = dataku.id
             holder.apiIterface!!.deleteKontak(dataku.id!!).enqueue(object : Callback<KontakData>{
                 override fun onResponse(call: Call<KontakData>, response: Response<KontakData>) {
                     if (response.isSuccessful){

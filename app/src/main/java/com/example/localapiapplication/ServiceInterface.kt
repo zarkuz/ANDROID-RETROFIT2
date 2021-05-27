@@ -7,6 +7,9 @@ interface ServiceInterface {
     @GET("Kontak")
     fun getData(): Call<List<KontakData>>
 
+    @GET("Kontak")
+    fun getDatawithId(@Query("id") id:Int): Call<List<KontakData>>
+
     @POST("Kontak")
     fun postKontak(@Body kontakData: KontakData): Call<KontakData>
 

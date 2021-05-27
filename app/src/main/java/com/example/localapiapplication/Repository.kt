@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 
-const val BASEURL = "http://192.168.40.107/example/ci-restserver-master/index.php/"
+const val BASEURL = "http://192.168.40.110/example/ci-restserver-master/index.php/"
 class Repository {
     companion object{
         private var retrofit: Retrofit? =null
